@@ -27,7 +27,7 @@
         "type": "quantitative",
         "scale": {"type": "linear",
         "domain": [5000, 10000, 15000, 20000, 25000],
-        "range": ["#EFF3FF", "#C6DBEF", "#9ECAE1", "#6BAED6", "#3182BD", "#08519C"]}
+        "range": ["#08519C", "#C6DBEF", "#9ECAE1", "#6BAED6", "#3182BD", "#08519C"]}
       },
       "tooltip": [
         {"field": "properties.NAME", "type": "nominal", "title": "Country"},
