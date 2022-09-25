@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Average household expenditure per capita for each country throughout the period from 1960 to 2016",
-    "width": 900,
+    "width": 1000,
     "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/KuahJiaChen/Data-Visualisation-Homework/main/js/world_map.json",
@@ -42,14 +42,14 @@
               "url": "https://raw.githubusercontent.com/KuahJiaChen/Data-Visualisation-Homework/main/data/householdexpenditure.csv"
             },
             "key": "Country",
-            "fields": ["Household Expenditure Per Capita"]
+            "fields": ["HouseholdExpenditurePerCapita"]
           }
         }
       ],
       "mark": {"type": "geoshape"},
       "encoding": {
         "color": {
-          "field": "Household Expenditure Per Capita",
+          "field": "HouseholdExpenditurePerCapita",
           "type": "quantitative",
           "scale": {"type": "linear",
           "domain": [5000, 10000, 15000, 20000, 25000],
@@ -57,7 +57,7 @@
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "Household Expenditure Per Capita", "type": "quantitative"}
+          {"field": "HouseholdExpenditurePerCapita", "type": "quantitative"}
         ]
       }
     }
